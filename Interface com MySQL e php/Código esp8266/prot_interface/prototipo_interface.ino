@@ -1,5 +1,4 @@
 #include <ESP8266WiFi.h>
-#include <Ticker.h>
 
 const char* ssid = "Trojan";
 const char* senha = "86112064KK";
@@ -15,8 +14,7 @@ WiFiClient client;
 int led1 = 0; //d3
 int led2 = 2; //d4
 int potenciometro = A0;
-
-Ticker ticker;
+int bomba = 0;
 
 void setup() {
   Serial.begin(115200);
@@ -54,15 +52,21 @@ void loop() {
   if (!client) {
     delay(500);
     Serial.println("NodeMCU - Gravando dados no BD via GET");
-    int valor2 = analogRead(A0);
-    float voltagem = valor2 * 3.3 / 1023.0;
-    float vazao = voltagem * 10.0 / 3.3;
+    int bytes = analogRead(A0);
+    float voltagem = bytes * 3.3 / 1023.0;
+    float vazao = voltagem * 10 / 3.3;
+
+    int estadoEletroBomba = digitalRead(led1);
+    int estadoEletroDreno = digitalRead(led2);
     
     Serial.println("Gravando dados no BD: ");
     Serial.print(String(vazao)); Serial.println(" l/min");
-  
+    Serial.println(estadoEletroBomba);
+    Serial.println(estadoEletroDreno);
+    Serial.println(bomba);
+    
     // Envio dos dados do sensor para o servidor via GET
-    if ( !getPage((float)vazao)) {
+    if ( !getPage((float)vazao, (int)estadoEletroBomba, (int)estadoEletroDreno, (int)bomba)) {
       Serial.println("Falha na requisição GET");
     }
     return;
@@ -100,6 +104,13 @@ void loop() {
     valor = LOW;
   }
 
+  if (request.indexOf("/BOMBA=ON") != -1) {
+    bomba = 1;
+  }
+  if (request.indexOf("/BOMBA=OFF") != -1) {
+    bomba = 0;
+  }
+
   client.println("HTTP/1.1 200 OK");
   client.println("Content-Type: text/html");
   client.println("");
@@ -112,12 +123,12 @@ void loop() {
 }
 
 // Executa o HTTP GET request no site remoto
-bool getPage(float vazao) {
+bool getPage(float vazao, int estadoEletroBomba, int estadoEletroDreno, int bomba) {
   if ( !client.connect(ip, http_port) ) {
     Serial.println("Falha na conexao com o site ");
     return false;
   }
-  String param = "?valor=" + String(vazao); //Parâmetros com as leituras
+  String param = "?vazao=" + String(vazao) + "&" + "eletroBomba=" + String(estadoEletroBomba) + "&" + "eletroDreno=" + String(estadoEletroDreno) + "&" + "bomba=" + String(bomba); //Parâmetros com as leituras
   Serial.println(param);
   client.println("GET /registravazao.php" + param);
   client.println("Host: ");
