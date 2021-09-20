@@ -4,7 +4,7 @@ if($conn->connect_error) {
     exit('Falha na conexão com o banco de dados');
 }
 
-$sql = "SELECT * FROM vazao ORDER BY ID DESC LIMIT 1";
+$sql = "SELECT * FROM voltagem ORDER BY ID DESC LIMIT 1";
 
 $novoResultado = $conn->query($sql);
 

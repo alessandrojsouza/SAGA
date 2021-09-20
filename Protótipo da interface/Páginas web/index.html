@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" lang="pt-br">
+        <script type="text/javascript" src="funcoes.js"></script>
+
+        <style>
+            #area {
+                display: flex;
+                justify-content: center;
+            }
+
+            #eletrovalvula_bomba:hover, #eletrovalvula_dreno:hover, #bomba:hover {
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <section id="area">
+
+            <svg width="800" height="800" xmlns="http://www.w3.org/2000/svg" stroke="null">
+                <g stroke="null">
+
+                 <rect stroke="#000" id="svg_86" height="48.59447" width="47.98705" y="343.42937" x="213.25102" fill="#ffc956"/>
+                 <rect stroke="#000" id="svg_88" height="44.94989" width="48.59447" y="412.06906" x="213.83707" fill="#00bf00"/>
+
+                 <!-- RECIPIENTES -->
+                 <rect stroke="#000" id="poço" height="249.19729" width="153.07169" y="482.22067" x="340.50216" fill="#5B9BA2"/>
+                 <text stroke="#000" transform="matrix(0.752336 0 0 0.569924 -140.106 -53.9244)" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" stroke-width="0" id="svg_78" y="1073.77644" x="671.39389" fill="#000000">Poço Artesiano</text>
+
+                 <text id="porcentCisterna" y="40" x="150"></text>
+                 <text id="nivelCisterna" y="70" x="150"></text>
+                 <rect stroke="#000" id="cisterna" height="240.54123" width="153.07169" y="54.59177" x="335.64273" fill="#5B9BA2"/>
+                 <text stroke="#000" transform="matrix(0.762018 0 0 0.644824 137.428 -266.743)" font-style="normal" font-weight="normal" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" stroke-width="0" id="svg_77" y="571.65303" x="342.22485" fill="#000000">Cisterna</text>
+
+                 <!-- DUTO DE DRENAGEM -->
+                 <path stroke="#7f3f00" fill="none" stroke-width="5" d="m414.89488,501.63941l-0.89915,-54.65862l-91.11261,0.91112l0.91112,-162.18044l30.97829,0" id="svg_8"/>
+                 
+                 <!-- SUPORTES DOS SENSORES DE NÍVEL -->
+                 <path stroke="#7f3f00" fill="none" stroke-width="5" opacity="NaN" d="m345.95303,275.37647l0.01197,-247.51375l-42.82292,0" id="svg_4"/>
+                 <path stroke="#7f3f00" fill="none" stroke-width="5" opacity="NaN" d="m351.00087,723.15226l-0.36561,-254.20141l-37.35556,-0.2123" id="svg_15"/>
+
+                 <!-- DUTO DA BOMBA -->
+                 <path stroke="#7f3f00" fill="none" stroke-width="5" d="m476.67833,279.31168l-0.06035,-243.23684l110.11755,-0.00986c3.16776,228.97151 -1.26709,450.74996 1.90069,679.72147l-117.8409,1.83586" id="svg_3"/>
+                 
+                 <!-- BOMBA -->
+                 <rect stroke="#000" id="bomba" value="0" height="30.75009" width="38.51818" y="698.16114" x="503.93178" fill="" onclick="controlarBomba()"/>
+                 <text stroke="#000" transform="matrix(0.41509 0 0 0.314447 231.771 252.206)" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" stroke-width="0" id="svg_62" y="1493.86471" x="663.05569" fill="#000000">Bomba</text>
+
+                 <!-- SUPORTES -->
+                 <rect stroke="#000" id="svg_11" height="574.01885" width="12.75597" y="212.82665" x="262.44777" fill="#666666"/>
+                 <rect stroke="#000" id="svg_12" height="577.6634" width="12.75597" y="211.00438" x="552.19062" fill="#666666"/>
+                 <rect stroke="#000" id="svg_13" height="14.57826" width="276.43891" y="296.65162" x="275.22513" fill="#A98E49"/>
+                 <rect stroke="#000" id="svg_14" height="18.22282" width="276.98688" y="732.17704" x="275.20374" fill="#4C261D"/>
+                 <rect stroke="#000" id="svg_85" height="157.32461" width="4.25202" y="330.67332" x="261.84549" stroke-width="0" fill="#adad69"/>
+
+                 <!-- ELETROVÁLVULAS -->
+                 <g stroke="null" id="eletrovalvula_bomba" value="0" onclick="controleEletrovalvulaBomba()">
+                  <title>Eletroválvula</title>
+                  <rect stroke="#000" id="luz1" height="24.29709" width="14.57838" y="375.62435" x="594.105" fill=""/>
+                  <rect stroke="#000" id="rectEletroBomba" height="34.62367" width="12.75608" y="370.15752" x="581.3489" fill="#666666"/>
+                 </g>
+                 <g stroke="null" id="eletrovalvula_dreno" value="0" onclick="controleEletrovalvulaDreno()">
+                  <title>Eletroválvula</title>
+                  <rect stroke="#000" id="luz2" height="24.29709" width="14.57838" y="331.89006" x="330.4844" fill=""/>
+                  <rect stroke="#000" id="rectEletroDreno" height="34.62367" width="12.75608" y="326.42323" x="317.72829" fill="#666666"/>
+                 </g>
+
+                 <!-- SENSORES DE FLUXO -->
+                 <g id="sensFluxoDreno">
+                    <title>Sensor de Fluxo</title>
+                    <text id="textoSensDreno" y="385.34436" x="340"></text>
+                    <ellipse stroke="#000000" ry="11.84507" rx="12.11821" id="svg_17" cy="403.26344" cx="330.51502" fill="#666666"/>
+                    <rect stroke="#000000" id="svg_19" height="34.62367" width="11.48046" y="385.34436" x="317.1209" fill="#666666"/>
+                 </g>
+                 <g id="sensFluxoBomba">
+                    <title>Sensor de fluxo</title>
+                    <text id="textoSensBomba" y="437.58254" x="600"></text>
+                    <ellipse stroke="#000000" ry="11.84507" rx="12.11821" id="svg_74" cy="455.50163" cx="595.35048" fill="#666666"/>
+                    <rect stroke="#000000" id="svg_73" height="34.62367" width="11.48046" y="437.58254" x="581.95636" fill="#666666"/>
+                 </g>
+                 
+
+                 <!-- SENSORES DE NÍVEL -->
+                 <g stroke="null" id="svg_37">
+                  <rect stroke="#000" stroke-width="0" id="svg_53" height="6.80533" width="34.43573" y="706.84219" x="352.47286" fill="#000000"/>
+                  <rect stroke="#000" transform="matrix(1.43063 0.611972 -0.720151 1.21573 274.743 -456.064)" stroke-width="0" id="svg_36" height="5" width="13.49986" y="731.67331" x="446.13122" fill="#000000"/>
+                 </g>
+                 <g stroke="null" id="svg_40">
+                  <rect stroke="#000" stroke-width="0" id="svg_38" height="6.80533" width="34.43573" y="497.88945" x="353.25802" fill="#000000"/>
+                  <rect stroke="#000" transform="matrix(1.43063 0.611973 -0.720151 1.21573 274.743 -456.064)" stroke-width="0" id="svg_39" height="5" width="13.49986" y="594.32503" x="377.54164" fill="#000000"/>
+                 </g>
+                 <g stroke="null" id="svg_43">
+                  <rect stroke="#000" stroke-width="0" id="svg_41" height="6.80533" width="34.43573" y="264.63989" x="347.81262" fill="#000000"/>
+                  <rect stroke="#000" transform="matrix(1.43063 0.611973 -0.720151 1.21573 274.743 -456.064)" stroke-width="0" id="svg_42" height="5" width="13.49986" y="442.78091" x="297.45098" fill="#000000"/>
+                 </g>
+                 <g stroke="null" id="svg_47">
+                  <rect stroke="#000" stroke-width="0" id="svg_44" height="6.80533" width="34.43573" y="212.4017" x="347.81262" fill="#000000"/>
+                  <rect stroke="#000" transform="matrix(1.43063 0.611973 -0.720151 1.21573 274.743 -456.064)" stroke-width="0" id="svg_45" height="5" width="13.49986" y="408.49898" x="280.19412" fill="#000000"/>
+                 </g>
+                 <g stroke="null" id="svg_50">
+                  <rect stroke="#000" stroke-width="0" id="svg_48" height="6.80533" width="34.43573" y="161.37836" x="347.81262" fill="#000000"/>
+                  <rect stroke="#000" transform="matrix(1.43063 0.611973 -0.720151 1.21573 274.743 -456.064)" stroke-width="0" id="svg_49" height="5" width="13.49986" y="375.01431" x="263.33859" fill="#000000"/>
+                 </g>
+                 <g stroke="null" id="svg_54">
+                  <rect stroke="#000" stroke-width="0" id="svg_51" height="6.80533" width="34.43573" y="112.7847" x="347.81262" fill="#000000"/>
+                  <rect stroke="#000" transform="matrix(1.43063 0.611973 -0.720151 1.21573 274.743 -456.064)" stroke-width="0" id="svg_52" height="5" width="13.49986" y="343.12414" x="247.2857" fill="#000000"/>
+                 </g>
+                 <g stroke="null" id="svg_57">
+                  <rect stroke="#000" stroke-width="0" id="svg_55" height="6.80533" width="34.43573" y="62.9762" x="347.81262" fill="#000000"/>
+                  <rect stroke="#000" transform="matrix(1.43063 0.611973 -0.720151 1.21573 274.743 -456.064)" stroke-width="0" id="svg_56" height="5" width="13.49986" y="310.43672" x="230.83149" fill="#000000"/>
+                 </g>
+                </g>
+               
+               </svg>
+        </section>
+    </body>
+    <script>
+        realTime();
+    </script>
+</html>
