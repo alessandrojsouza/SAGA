@@ -1,0 +1,65 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_10" height="132" width="84" y="88.5" x="129.16665" stroke="#000" fill="#5B9BA2"/>
+  <rect stroke="#000" id="svg_11" height="315" width="7" y="178" x="89" fill="#666666"/>
+  <rect stroke="#000" id="svg_12" height="316.99999" width="7" y="177.00001" x="248" fill="#666666"/>
+  <rect id="svg_13" height="8" width="150" y="224" x="97" stroke="#000" fill="#A98E49"/>
+  <rect id="svg_14" height="10" width="152" y="463" x="96" stroke="#000" fill="#4C261D"/>
+  <rect stroke-width="0" stroke="#000" id="svg_16" height="131.99999" width="6.5" y="71.4999" x="132.49996" fill="#C48157"/>
+  <rect stroke-width="0" stroke="#000" id="svg_17" height="5.5" width="28" y="71.49989" x="110.99996" fill="#C48157"/>
+  <rect stroke-width="0" id="svg_18" height="5" width="22" y="93.99989" x="137.33329" stroke="#000" fill="#000000"/>
+  <rect stroke-width="0" id="svg_21" height="5.5" width="21.5" y="113.99989" x="137.83329" stroke="#000" fill="#000000"/>
+  <rect stroke-width="0" id="svg_22" height="5" width="22" y="152.49989" x="137.83329" stroke="#000" fill="#000000"/>
+  <rect stroke-width="0" id="svg_23" height="5.5" width="21.5" y="133.49989" x="137.83329" stroke="#000" fill="#000000"/>
+  <rect stroke-width="0" id="svg_25" height="5.5" width="21.5" y="172.49989" x="137.83329" stroke="#000" fill="#000000"/>
+  <!-- Canos pretos -->
+  <rect transform="rotate(-47.4896 161.583 121)" stroke-width="0" id="svg_27" height="13" width="6.5" y="114.49989" x="158.33329" stroke="#000" fill="#000000"/>
+  <rect transform="rotate(-47.4896 161.583 159)" stroke-width="0" id="svg_28" height="13" width="6.5" y="152.49989" x="158.33329" stroke="#000" fill="#000000"/>
+  <rect transform="rotate(-47.4896 161.083 140)" stroke-width="0" id="svg_29" height="13" width="6.5" y="133.49989" x="157.83329" stroke="#000" fill="#000000"/>
+  <rect transform="rotate(-47.4896 162.083 101)" stroke-width="0" id="svg_31" height="13" width="6.5" y="94.49989" x="158.83329" stroke="#000" fill="#000000"/>
+  <rect transform="rotate(-47.4896 161.083 179)" stroke-width="0" id="svg_32" height="13" width="6.5" y="172.49988" x="157.83329" stroke="#000" fill="#000000"/>
+  <rect stroke="#000" id="svg_46" height="136.75012" width="84" y="325.83333" x="131.83332" fill="#5B9BA2"/>
+  <rect stroke-width="0" stroke="#000" id="svg_47" height="131.99999" width="6.5" y="315.83329" x="135.16662" fill="#C48157"/>
+  <rect stroke-width="0" stroke="#000" id="svg_48" height="5.5" width="28" y="315.83328" x="113.66663" fill="#C48157"/>
+  <rect stroke-width="0" id="svg_49" height="5" width="22" y="338.33328" x="134.66663" stroke="#000" fill="#000000"/>
+  <rect stroke-width="0" id="svg_53" height="5.5" width="21.5" y="432.49994" x="135.49996" stroke="#000" fill="#000000"/>
+  <rect transform="rotate(-47.4896 159.417 345.333)" stroke-width="0" id="svg_57" height="13" width="6.5" y="338.83328" x="156.16662" stroke="#000" fill="#000000"/>
+  <rect transform="rotate(-30.91 157.934 439.639)" stroke="#000" stroke-width="0" id="svg_58" height="12.74177" width="6.5" y="433.26832" x="154.68359" fill="#000000"/>
+  <rect stroke-width="0" id="svg_59" height="36" width="7" y="311" x="177" stroke="#000" fill="#C48157"/>
+  <rect stroke-width="0" stroke="#000" id="svg_60" height="6.66666" width="52.66667" y="306.25001" x="131.49994" fill="#C48157"/>==
+  <rect stroke-width="0" stroke="#000" id="svg_61" height="99.00086" width="6.00005" y="214.0045" x="126.00462" fill="#C48157"/>
+  <rect stroke-width="0" stroke="#000" id="svg_62" height="8.00007" width="22.00019" y="208.00444" x="126.00462" fill="#C48157"/>
+  <rect stroke-width="0" id="svg_63" height="138.00121" width="6.00005" y="77.00329" x="202.00528" stroke="#000" fill="#C48157"/>
+  <rect stroke-width="0" stroke="#000" id="svg_64" height="7.00006" width="65.00057" y="450.00657" x="205.00531" fill="#C48157"/>
+  <rect stroke-width="0" stroke="#000" id="svg_65" height="380.00334" width="7.00006" y="77.0033" x="264.00583" fill="#C48157"/>
+  <rect id="svg_66" height="1.00001" width="0" y="87.00338" x="339.00648" stroke="#000" fill="none"/>
+  <rect stroke-width="0" id="svg_67" height="7.00006" width="69.00061" y="77.00329" x="202.00528" stroke="#000" fill="#C48157"/>
+  <rect id="svg_68" height="19.00017" width="7.00006" y="236.00469" x="125.00461" stroke="#000" fill="#666666"/>
+  <rect id="svg_69" height="19.00017" width="6.00005" y="273.00501" x="126.00462" stroke="#000" fill="#666666"/>
+  <ellipse stroke-width="0" stroke="#000" ry="6.50013" rx="6.33336" id="svg_70" cy="282.17167" cx="133.0048" fill="#666666"/>
+  
+  <rect stroke="#000" id="svg_71" height="13.33333" width="8.00007" y="239.00468" x="132.00467" fill="#bfbf00"/>
+  <rect id="svg_72" height="19.00017" width="7.00006" y="264.33728" x="264.00097" stroke="#000" fill="#666666"/>
+  <rect id="svg_73" height="19.00017" width="6.00005" y="301.3376" x="265.00098" stroke="#000" fill="#666666"/>
+  <ellipse stroke-width="0" stroke="#000" ry="6.50013" rx="6.33336" id="svg_74" cy="310.50426" cx="272.00117" fill="#666666"/>
+  <!-- Quadrados amarelos -->
+  <rect stroke="#000" id="svg_75" height="13.33333" width="8.00007" y="267.33727" x="271.00104" fill="#bfbf00"/>
+  <rect id="svg_76" height="17.33333" width="18.66667" y="445.33333" x="223.49975" stroke="#000" fill="#FFEBFF"/>
+  <text transform="matrix(0.418167 0 0 0.353855 141.447 64.5702)" stroke="#000" font-style="normal" font-weight="normal" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" stroke-width="0" id="svg_77" y="148.48469" x="52.73915" fill="#000000">Cisterna</text>
+  <text transform="matrix(0.412854 0 0 0.312753 130.23 240.036)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" stroke-width="0" id="svg_78" y="407.37543" x="36.45708" fill="#000000">Poço Artesiano</text>
+  <text transform="matrix(0.18997 0 0 0.18997 187.957 335.424)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" id="svg_79" y="624.74272" x="200.10947" stroke-width="0" fill="#000000">Bomba</text>
+  <text transform="matrix(0.335066 0 0 0.263071 114.296 102.302)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" id="svg_80" y="-11.18703" x="-136.70062" stroke-width="0" fill="#000000">Sensor de 100%</text>
+  <text style="cursor: move;" transform="matrix(0.335066 0 0 0.263071 114.296 102.302)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" id="svg_81" y="64.83851" x="-139.68512" stroke-width="0" fill="#000000">Sensor de 80%</text>
+  <text style="cursor: move;" transform="matrix(0.335066 0 0 0.263071 114.296 102.302)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" id="svg_82" y="135.79569" x="-134.71095" stroke-width="0" fill="#000000">Sensor de 60%</text>
+  <text style="cursor: move;" transform="matrix(0.335066 0 0 0.263071 114.296 102.302)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" id="svg_83" y="214.35542" x="-134.71095" stroke-width="0" fill="#000000">Sensor de 40%</text>
+  <text style="cursor: move;" transform="matrix(0.335066 0 0 0.263071 114.296 102.302)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" id="svg_84" y="284.04552" x="-134.71095" stroke-width="0" fill="#000000">Sensor de 20%</text>
+  <rect stroke="#000" id="svg_85" height="86.33384" width="2.33335" y="242.66983" x="88.66949" stroke-width="0" fill="#adad69"/>
+  <rect stroke="#000" id="svg_86" height="26.66682" width="26.33349" y="249.66987" x="62.00267" fill="#ffc956"/>
+  <rect stroke="#000" id="svg_88" height="24.66681" width="26.66682" y="287.33676" x="61.336" fill="#00bf00"/>
+  <text transform="matrix(0.214429 0 0 0.214429 112.875 209.169)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" stroke-width="0" id="svg_89" y="253.95787" x="-226.38049" fill="#000000">Fonte DC</text>
+  <text style="cursor: move;" transform="matrix(0.187074 0 0 0.214429 106.47 209.169)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" stroke-width="0" id="svg_90" y="406.30134" x="-227.70771" fill="#000000">Módulo de</text>
+  <text transform="matrix(0.191247 0 0 0.18648 108.816 221.944)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" stroke-width="0" id="svg_91" y="435.83732" x="-227.93502" fill="#000000">Controle</text>
+ </g>
+
+</svg>
