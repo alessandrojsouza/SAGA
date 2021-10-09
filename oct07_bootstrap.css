@@ -1,0 +1,66 @@
+body{
+    background-color: #efa9a9;
+}
+h3{
+    font-size: 40px;
+    padding: 5px;
+    text-align: center;
+}
+
+div#mapeamento{
+    height:100%;
+}
+/*--------ESQUERDA------- */
+div#leituras{
+    background-color: #2d82b7;
+    border-radius: 10px 10px 10px 10px;
+    padding-top: 10px;
+    padding: 0px;
+    padding-bottom: 20px;
+}
+h1#titulo{
+    font-size: 34px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    background-color: #192A51;
+    padding: 5px;
+    text-align: center;
+}
+
+/*--------DIREITA--------*/
+div#controles{
+    background-color: rgb(216, 228, 238);
+    border-radius: 10px 10px 10px 10px;
+    padding-top: 0px;
+    padding: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+h1#titulo2{
+    background-color:#2d82b7;
+    border-radius: 10px 10px 0px 0px;
+    padding: 5px;
+    text-align: center;
+}
+button{
+    margin: 5px;
+}
+/* ------- MENU ----------*/
+nav#menu{
+    background-color: #192A51;
+    text-align: left;
+}
+nav#menu ul{
+    list-style: none;
+	left: 490px;
+}
+nav#menu li{
+	display: inline-block;
+	padding: 5px;
+	margin: 2px;
+}
+nav#menu a {
+	color: #ffffff;
+	text-decoration: none;
+    font-size: 20px;
+}
