@@ -1,0 +1,70 @@
+/* ------- MENU ----------*/
+nav#menu{
+    background-color: #192A51;
+    text-align: left;
+    margin-bottom: -16px;
+    margin-right: -60px;
+}
+nav#menu ul{
+    list-style: none;
+	left: 490px;
+}
+nav#menu li{
+	display: inline-block;
+	padding: 5px;
+	margin: 2px;
+}
+nav#menu a {
+	color: #ffffff;
+	text-decoration: none;
+    font-size: 20px;
+}
+
+/*-------Estado atual------*/
+div#estadoAtual{
+    background-color: #41ADC1;
+    text-align: center;
+    margin-right: -60px;
+}
+div#tituloEA{ /*titulo*/
+    background-color: #D1D1D1;
+    margin-bottom: 5px;
+    border-radius: 0px 0px 20px 0px;
+}
+div#dadosEA{
+    margin-right: 50px;
+}
+h3.destaque{
+    color: white;
+    text-align: center;
+}
+
+/*-------Histórico------*/
+div#tituloH{ /*titulo*/
+    background-color: #D1D1D1;
+    border-radius: 0px 20px 0px 0px;
+    text-align: center;
+}
+
+div#periodo{
+    text-align: center;
+    border-radius: 0px 0px 20px 0px;
+}
+
+div#periodoRadio{
+    background-color:#C4C4C4;
+    padding-bottom: 10px;
+}
+
+div#periodoRadioF{
+    background-color:#C4C4C4;
+    padding-bottom: 10px;
+    border-radius: 0px 0px 20px 0px;
+}
+h5{
+    margin-right: 10px;
+}
+input[type='radio'] { 
+    transform: scale(1.5);
+    cursor: pointer;
+}
