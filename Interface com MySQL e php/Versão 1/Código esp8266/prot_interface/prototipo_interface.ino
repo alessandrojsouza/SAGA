@@ -4,7 +4,7 @@ const char* ssid = "Trojan";
 const char* senha = "86112064KK";
 
 //dados do site que vai receber a requisição GET
-const char http_site[] = "http://esptest.local/registravazao.php";
+const char http_site[] = "http://esptest.local/registra-estados.php";
 const int http_port = 80;
 
 IPAddress ip(192,168,0,108);
@@ -54,7 +54,7 @@ void loop() {
     Serial.println("NodeMCU - Gravando dados no BD via GET");
     int bytes = analogRead(A0);
     float voltagem = bytes * 3.3 / 1023.0;
-    float vazao = voltagem * 10 / 3.3;
+    float vazao = voltagem * 30.0 / 3.3;
 
     int estadoEletroBomba = digitalRead(led1);
     int estadoEletroDreno = digitalRead(led2);
@@ -130,7 +130,7 @@ bool getPage(float vazao, int estadoEletroBomba, int estadoEletroDreno, int bomb
   }
   String param = "?vazao=" + String(vazao) + "&" + "eletroBomba=" + String(estadoEletroBomba) + "&" + "eletroDreno=" + String(estadoEletroDreno) + "&" + "bomba=" + String(bomba); //Parâmetros com as leituras
   Serial.println(param);
-  client.println("GET /registravazao.php" + param);
+  client.println("GET /registra-estados.php" + param);
   client.println("Host: ");
   client.println(http_site);
   client.println("Connection: close");

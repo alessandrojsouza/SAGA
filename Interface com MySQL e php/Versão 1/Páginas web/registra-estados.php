@@ -18,7 +18,7 @@ $conn2 = new mysqli($servername, $username, $password, $dbestados);
 
 if ($conn1->connect_error || $conn2->connect_error) {
   //Gravar log de erros
-  die("Não foi possível estabelecer conexão com o BD: " . $conn->connect_error);
+  die("Não foi possível estabelecer conexão com todos os bancos de dados: " . $conn->connect_error);
 } 
 $sql1 = "INSERT INTO voltagem (valor) VALUES ($vazao)";
 $sql2 = "UPDATE valvulas SET estado=$eletroBomba WHERE nome='eletrobomba'";
