@@ -1,13 +1,23 @@
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    height: 0;
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* ------- MENU ----------*/
 nav#menu{
     background-color: #192A51;
     text-align: left;
     margin-bottom: -16px;
-    margin-right: -60px;
 }
 nav#menu ul{
     list-style: none;
-	left: 490px;
+	/*left: 490px;*/
 }
 nav#menu li{
 	display: inline-block;
@@ -24,15 +34,11 @@ nav#menu a {
 div#estadoAtual{
     background-color: #41ADC1;
     text-align: center;
-    margin-right: -60px;
 }
 div#tituloEA{ /*titulo*/
     background-color: #D1D1D1;
     margin-bottom: 5px;
     border-radius: 0px 0px 20px 0px;
-}
-div#dadosEA{
-    margin-right: 50px;
 }
 h3.destaque{
     color: white;
@@ -68,3 +74,32 @@ input[type='radio'] {
     transform: scale(1.5);
     cursor: pointer;
 }
+
+/*-- TABELAS --*/
+div#rowtabelas{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+table{
+    background-color: #C4C4C4;
+    border-radius: 0px 0px 10px 10px;
+    border-style: hidden;
+    margin-top: 10px;
+}
+table caption{
+    background-color: #192A51;
+    border-radius: 10px 10px 0px 0px;
+    caption-side: top;
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+}
+table td{
+    border: 1px solid rgb(71, 67, 67);
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+
+
