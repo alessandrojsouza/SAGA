@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Histórico</title> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/script-historico.js"></script>
+        <link rel='stylesheet' type="text/css" href="estilos/estilos_historico.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Mapeamento</a></li>
+                <li><a href="#"><b>Histórico</b></a></li>
+            </ul>
+        </nav>
+        <div id="estadoAtual">
+            <div class="row">
+                <div id="tituloEA" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <h3>Estado atual</h3>
+                </div>
+            </div>
+            <div id="dadosEA" class="row justify-content-center">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <h3 class="destaque">Estado dos reservatórios:</h3>
+                    <h4>Poço artesiano: <span id="estadoPoco"></span></h4>
+                    <h4>Cisterna: <span id="estadoCisterna"></span></h4>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <h3 class="destaque">Estado da bomba e eletroválvulas:</h3>
+                    <h4>Bomba: <span id="estadoBomba"></span></h4>
+                    <h4>Eletroválvula de Descida: <span id="estadoValSub"></span></h4>
+                    <h4>Eletroválvula de Subida: <span id="estadoValDes"></span></h4>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <h3 class="destaque">Leitura dos sensores de fluxo:</h3>
+                    <h4>Vazão de entrada: <span id="estadoSensSub"></span></h4>
+                    <h4>Vazão de saída: <span id="estadoSensDes"></span></h4>
+                </div>
+            </div>
+            <div class="row" id="rowTituloH">
+                <div id="tituloH" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <h3>Histórico</h3>
+                </div>
+            </div>
+        </div>
+        <div id="historico">
+            <div id="periodo" class="row">
+                <div class="col-3" id="periodoRadio">
+                    <label for="diario"><h5>Diário</h5></label><input type="radio" name="periodo" id="periodoDiario"/> </br>
+                    <dropdown>
+                        <input type="date" id="inputDiario">
+                    </dropdown>
+                </div>
+                <div class="col-3" id="periodoRadio">
+                    <label for="mensal"><h5>Mensal</h5></label><input type="radio" name="periodo" id="periodoMensal"/> </br>
+                    <dropdown>
+                        <input type="month" id="inputMensal">
+                    </dropdown>
+                </div>
+                <div class="col-3" id="periodoRadioF">
+                    <label for="anual"><h5>Anual</h5></label><input type="radio" name="periodo" id="periodoAnual"/> </br>
+                    <dropdown>
+                        <input type="number" min="2000" max="2099" step="1" value="2021" id="inputAnual"/>
+                    </dropdown>
+                </div>
+                
+            </div>
+            <div id="tabelas">
+                <div id="rowtabelas" class="row justify-content-center">
+                    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-3 table-wrapper-scroll-y my-custom-scrollbar">
+                        <table id="acBomba" class="table table-striped">
+                            <caption>Controle da bomba</caption>
+                            <tr><td></td></tr>
+                            
+                        </table>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-3 table-wrapper-scroll-y my-custom-scrollbar">
+                        <table class="table table-striped">
+                            <caption>Detecção de problemas</caption>
+                            <tr>
+                              <td>11:30</td>
+                              <td>Falha no sensor 2</td>
+                            </tr>
+                            <tr>
+                              <td>12:10</td>
+                              <td>Vazamentos      </td>
+                            </tr>
+                            <tr>
+                                <td>13:40</td>
+                                <td>Falha no sensor 1</td>
+                            </tr>
+                            <tr>
+                                <td>15:25</td>
+                                <td>Anomalia</td>
+                            </tr>
+                            <tr>
+                                <td>13:40</td>
+                                <td>Falha no sensor 1</td>
+                            </tr>
+                            <tr>
+                                <td>15:25</td>
+                                <td>Anomalia</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-3 table-wrapper-scroll-y my-custom-scrollbar">
+                        <table class="table table-striped" id="nivelPoco">
+                            <caption>Niveis poço</caption>
+                            <tr><td></td></tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-3 table-wrapper-scroll-y my-custom-scrollbar">
+                        <table class="table table-striped" id="nivelCisterna">
+                            <caption>Niveis cisterna</caption>
+                            <tr><td></td></tr>
+                        </table>
+
+                    </div> 
+
+                </div>
+               
+            </div>
+        </div>       
+
+    </body>
+</html>
