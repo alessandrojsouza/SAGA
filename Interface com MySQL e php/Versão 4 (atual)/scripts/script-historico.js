@@ -58,11 +58,9 @@ function realTime() {
     });
 }
 
-$(document).ready(function () {
-    setInterval(function () { realTime() }, 3000);
-
-    document.getElementById("inputDiario").addEventListener("change", function() {
-        var input = this.value;
+function filtrarDia() {
+    if ($("#inputDiario").val() != '') {
+        var input = $("#inputDiario").val();
         var dateEntered = new Date(input);
     
         $.post("php/filtra-historico.php", {data: input, tabela: 1, periodo: "diario"}, function(result){
@@ -79,10 +77,12 @@ $(document).ready(function () {
             $("#nivelPoco").html(result);
     
         });
-    });
-    
-    document.getElementById("inputMensal").addEventListener("change", function() {
-        var input = this.value;
+    }
+}
+
+function filtrarMes() {
+    if ($("#inputMensal").val() != '') {
+        var input = $("#inputMensal").val();
         var dateEntered = new Date(input);
     
         $.post("php/filtra-historico.php", {data: input, tabela: 1, periodo: "mensal"}, function(result){
@@ -99,10 +99,12 @@ $(document).ready(function () {
             $("#nivelPoco").html(result);
     
         });
-    });
-    
-    document.getElementById("inputAnual").addEventListener("change", function() {
-        var input = this.value;
+    }
+}
+
+function filtrarAno() {
+    if ($("#inputAnual").val() != '') {
+        var input = $("#inputAnual").val();
         var dateEntered = new Date(input);
     
         $.post("php/filtra-historico.php", {data: input, tabela: 1, periodo: "anual"}, function(result){
@@ -119,5 +121,52 @@ $(document).ready(function () {
             $("#nivelPoco").html(result);
     
         });
+    }
+}
+
+$(document).ready(function () {
+    setInterval(function () { realTime() }, 3000);
+
+    $("#inputDiario").change(function() {
+        filtrarDia();
+    });
+    
+    $("#inputMensal").change(function() {
+        filtrarMes();
+    });
+    
+    $("#inputAnual").change(function() {
+        filtrarAno();
+    });
+
+    $(".periodo").change( function() { 
+        var diario = $("#periodoDiario").prop("checked");
+        var mensal = $("#periodoMensal").prop("checked");
+        var anual = $("#periodoAnual").prop("checked");
+
+        if (diario) {
+            $("#inputDiario").removeAttr("disabled");
+            $("#inputMensal").attr("disabled", "disabled");
+            $("#inputAnual").attr("disabled", "disabled");
+
+            filtrarDia();
+        }
+
+        else if (mensal) {
+            $("#inputDiario").attr("disabled", "disabled");
+            $("#inputMensal").removeAttr("disabled", "disabled");
+            $("#inputAnual").attr("disabled", "disabled");
+
+            filtrarMes();
+        }
+
+        else if (anual) {
+            $("#inputDiario").attr("disabled", "disabled");
+            $("#inputMensal").attr("disabled", "disabled");
+            $("#inputAnual").removeAttr("disabled");
+
+            filtrarAno();
+        }
+
     });
 });

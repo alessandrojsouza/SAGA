@@ -48,21 +48,21 @@
         <div id="historico">
             <div id="periodo" class="row">
                 <div class="col-3" id="periodoRadio">
-                    <label for="diario"><h5>Diário</h5></label><input type="radio" name="periodo" id="periodoDiario"/> </br>
+                    <label for="diario"><h5>Diário</h5></label><input type="radio" name="periodo" id="periodoDiario" class="periodo" checked="checked" value=""/> </br>
                     <dropdown>
                         <input type="date" id="inputDiario">
                     </dropdown>
                 </div>
                 <div class="col-3" id="periodoRadio">
-                    <label for="mensal"><h5>Mensal</h5></label><input type="radio" name="periodo" id="periodoMensal"/> </br>
+                    <label for="mensal"><h5>Mensal</h5></label><input type="radio" name="periodo" id="periodoMensal" class="periodo" value=""/> </br>
                     <dropdown>
-                        <input type="month" id="inputMensal">
+                        <input type="month" id="inputMensal" disabled>
                     </dropdown>
                 </div>
                 <div class="col-3" id="periodoRadioF">
-                    <label for="anual"><h5>Anual</h5></label><input type="radio" name="periodo" id="periodoAnual"/> </br>
+                    <label for="anual"><h5>Anual</h5></label><input type="radio" name="periodo" id="periodoAnual" class="periodo" value=""/> </br>
                     <dropdown>
-                        <input type="number" min="2000" max="2099" step="1" value="2021" id="inputAnual"/>
+                        <input type="number" min="2000" max="2099" step="1" value="2021" id="inputAnual" disabled/>
                     </dropdown>
                 </div>
                 
