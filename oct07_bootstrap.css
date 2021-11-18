@@ -5,18 +5,21 @@ body{
     width: 0;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
-
+*{
+    margin: 0px;
+    padding:0px;
+}
 /*
 div#container{
     background-color:rgb(155, 236, 242);
     margin-top: -20px;
 
 }
-*/
 div#mapeamento{
     margin-left: 1.5px;
     margin-top: -10px;
 }
+*/
 
 #svg{
     margin-top: 10px;
@@ -80,12 +83,13 @@ div#svg{
     text-align: center;
     border-radius: 10px 10px 10px 10px;
     margin: 10px;
+    height: 100%;
 }
+
 /* ------- MENU ----------*/
 nav#menu{
     background-color: #192A51;
     text-align: left;
-    margin-right: -15px;
 }
 nav#menu ul{
     list-style: none;
