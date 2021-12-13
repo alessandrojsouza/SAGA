@@ -58,10 +58,15 @@ function realTime() {
     });
 }
 
+var periodoGrafico;
+var dataGrafico;
+
 function filtrarDia() {
     if ($("#inputDiario").val() != '') {
         var input = $("#inputDiario").val();
         var dateEntered = new Date(input);
+        periodoGrafico = "diario";
+        dataGrafico = input;
     
         $.post("php/filtra-historico.php", {data: input, tabela: 1, periodo: "diario"}, function(result){
             $("#acBomba").html(result);
@@ -84,6 +89,8 @@ function filtrarMes() {
     if ($("#inputMensal").val() != '') {
         var input = $("#inputMensal").val();
         var dateEntered = new Date(input);
+        periodoGrafico = "mensal";
+        dataGrafico = input;
     
         $.post("php/filtra-historico.php", {data: input, tabela: 1, periodo: "mensal"}, function(result){
             $("#acBomba").html(result);
@@ -106,6 +113,8 @@ function filtrarAno() {
     if ($("#inputAnual").val() != '') {
         var input = $("#inputAnual").val();
         var dateEntered = new Date(input);
+        periodoGrafico = "anual";
+        dataGrafico = input;
     
         $.post("php/filtra-historico.php", {data: input, tabela: 1, periodo: "anual"}, function(result){
             $("#acBomba").html(result);
@@ -168,5 +177,10 @@ $(document).ready(function () {
             filtrarAno();
         }
 
+    });
+
+    $("#grafico").click(function() {
+        var url = "http://esptest.local/versao-5/php/grafico.php?data=" + dataGrafico + "&periodo=" + periodoGrafico;
+        window.location.replace(url);
     });
 });

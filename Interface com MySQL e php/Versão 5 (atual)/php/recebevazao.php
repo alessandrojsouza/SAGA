@@ -2,7 +2,7 @@
 $vazaoSubida = filter_input(INPUT_GET, 'vazaoSubida', FILTER_VALIDATE_INT);
 $vazaoDescida = filter_input(INPUT_GET, 'vazaoDescida', FILTER_VALIDATE_INT);
 
-$conn = new mysqli("192.168.0.108", "esp", "esp8266", "dbestados");
+$conn = new mysqli("192.168.0.106", "esp", "esp8266", "dbestados");
 if($conn->connect_error) {
     exit('Falha na conexão com o banco de dados');
 }

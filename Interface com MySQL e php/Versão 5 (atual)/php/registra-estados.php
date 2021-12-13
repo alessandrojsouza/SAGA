@@ -12,10 +12,9 @@ if (is_null($vazao) && is_null($eletroBomba) && is_null($eletroDreno) && is_null
   die("Dados inválidos");
 } 
 
-$servername = "192.168.0.108";
+$servername = "192.168.0.106";
 $username = "esp";
 $password = "esp8266";
-$dbpotenciometro = "dbpotenciometro";
 $dbestados = "dbestados";
 $conn = new mysqli($servername, $username, $password, $dbestados);
 
