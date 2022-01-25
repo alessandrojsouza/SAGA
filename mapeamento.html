@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mapeamento</title>
+        <link rel='stylesheet' type="text/css" href="mapeamento.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+        
+    </head>
+
+    <body>
+        <nav id="menu">
+            <ul>
+                <li><a href="#"><b>Mapeamento</b></a></li>
+                <li><a href="oct14_historico.html">Histórico</a></li>
+            </ul>
+        </nav>
+            <!--<div id="container" class="container-fluid">-->
+                <div id="mapeamento" class="row justify-content-center align-self-start">
+                    <div id="leituras" class="col-xs-12 col-sm-10 col-md-10 col-lg-4 col-xl-3">
+                        <h1 id="titulo">Leitura dos sensores de fluxo:</h1>
+                        <h2 id="textLei">Vazão de entrada:</h2>
+                        <h3 class="dados" id ="vEnt">xxx</h2>
+                        <h2 id="textLei">Vazão de saída:</h2>
+                        <h3 class="dados" id ="vSai">xxx</h2>
+                        <h1 id="titulo">Estado dos reservatórios:</h1>
+                        <h2 id="textLei">Cisterna:</h2>
+                        <h3 class="dados" id ="cist">xxx</h2>
+                        <h2 id="textLei">Poço artesanal:</h2>
+                        <h3 class="dados" id ="poco">xxx</h2>
+                    </div>
+                    <figure id="imagem" class="col-xs-12 col-sm-10 col-md-10 col-lg-4 col-xl-3">
+                        <div id="svg">
+                            <svg width="300px" height="530px" xmlns="http://www.w3.org/2000/svg" stroke="null">
+                                <!-- Caixas -->
+                                 <rect stroke="#000" id="svg_86" height="30" width="25" y="206.50524" x="1.07155" fill="#ffc956"/>
+                                 <rect stroke="#000" id="svg_88" height="29.98828" width="25.42168" y="252.29815" x="0.66934" fill="#00bf00"/>
+    
+                                <!-- RECIPIENTES -->
+                                <path stroke="#000" fill="#5B9BA2" opacity="undefined" d="m86.14566,317.50605l123.09706,0l0,176.32005l-123.09706,0l0,-176.32005z" id="poço"/>
+                                <path stroke="#000" fill="white" opacity="undefined" d="m86.14566,317.50605l123.09706,0l0,176.32005l-123.09706,0l0,-176.32005z" id="agua2"/>
+                                <text stroke="#000" transform="matrix(0.558717 0 0 0.457529 113.9 227.512)" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" stroke-width="0" id="svg_78" y="295.89457" x="-0.22698" fill="#000000">Poço Artesiano</text>
+    
+                                <path id="cisterna" d="m88.41607,16.2255l123.09705,0l0,170.19543l-123.09705,0l0,-170.19543z" opacity="undefined" stroke="#000" fill="#5B9BA2"/>
+                                <path id="agua" d="m88.41607,16.2255l123.09705,0l0,170.19543l-123.09705,0l0,-170.19543z" opacity="undefined" stroke="#000" fill="white"/>
+                                <text stroke="#000" transform="matrix(0.610029 0 0 0.452872 148.369 7.72198)" font-style="normal" font-weight="normal" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" stroke-width="0" id="svg_77" y="91.12191" x="-22.63614" fill="#000000">Cisterna</text>
+                                 
+                                <!-- DUTO DE DRENAGEM -->
+                                 <path id="svg_24" stroke="#845335" stroke-width="8" fill="none" opacity="NaN" d="m164.43839,329.6005l0.20116,-32.11151l-81.72365,0l0,-121.01737l24.98558,0"/>
+                                 <path  id="aguaDreno" stroke="#845335" stroke-width="3" fill="none" opacity="NaN" d="m164.43839,329.6005l0.20116,-32.11151l-81.72365,0l0,-121.01737l24.98558,0"/>
+                                
+                                 <!-- SUPORTES DOS SENSORES DE NÍVEL -->
+                                 <path stroke="#845335" fill="none" stroke-width="8" opacity="NaN" d="m67.91,4.50171c0,0 37.36874,0 37.36874,0c0,0 0,157.41914 0,157.41914" id="svg_7"/>
+                                 <path stroke="#845335" fill="none" stroke-width="8" opacity="NaN" d="m69.21362,307.8924c0,0 25.17594,0 25.17594,0l-0.16453,176.9849" id="svg_9"/>
+                                 
+                                <!-- DUTO DA BOMBA -->
+                                <path stroke="#845335" fill="none" stroke-width="8" opacity="NaN" d="m199.42179,176.34802l-0.71337,-172.67566c0.17026,-0.6412 73.84988,0.83302 73.84988,0.83302c0.54311,-3.15895 -0.72413,139.83274 -1.43749,475.9461c0.71337,0.83302 -67.35428,0.83302 -69.51589,0.84237" id="svg_2"/>
+                                <path  id="aguaBomba" stroke="#5B9BA2" fill="none" stroke-width="3" opacity="NaN" d="m199.42179,176.34802l-0.71337,-172.67566c0.17026,-0.6412 73.84988,0.83302 73.84988,0.83302c0.54311,-3.15895 -0.72413,139.83274 -1.43749,475.9461c0.71337,0.83302 -67.35428,0.83302 -69.51589,0.84237"/>
+                                 
+                                <!--BOMBA -->
+                                <rect stroke="#000" id="svg_76" height="22.40605" width="26.59504" y="469.71326" x="218.29305" fill=""/>
+    
+                                <!-- SUPORTES -->
+                                <rect stroke="#000" id="svg_13" height="10.31487" width="219.81617" y="186.20626" x="41.76617" fill="#A98E49"/>
+                                <rect stroke="#000" id="svg_85" height="104.95896" width="3.15773" y="197.99506" x="26.49323" stroke-width="0" fill="#adad69"/>
+                                <rect stroke="#000" id="svg_14" height="12.8936" width="219.74705" y="494.36317" x="40.30073" fill="#4C261D"/>
+                                <rect stroke="#000" id="svg_11" height="364.88758" width="10.25809" y="168.15637" x="30.04264" fill="#666666"/>
+                                <rect stroke="#000" id="svg_17" height="364.88758" width="10.25809" y="171.15637" x="252.04264" fill="#666666"/>
+    
+                                <!-- ELETROVÁLVULAS -->
+                                <g stroke="null" id="eletrovalvula_bomba" value="0">
+                                    <title>Eletroválvula</title>
+                                    <path stroke="#000"  id="luz1" fill="" stroke-width="0.5" opacity="undefined" d="m277.67459,227.98411l10.82654,0l0,16.20978l-10.82654,0l0,-16.20978z"/>
+                                    <rect stroke="#000" id="rectEletroBomba" height="23.09914" width="9.47322" y="224.33691" x="269.10356" fill="#666666"/>
+                                </g>
+                                <g stroke="null" id="eletrovalvula_dreno" value="0">
+                                    <title>Eletroválvula</title>
+                                    <rect stroke="#000" id="luz2" height="16.20978" width="10.82654" y="217.03922" x="89.63895" fill="" stroke-width="0.5"/>
+                                    <rect stroke="#000" id="rectEletroDreno" height="23.09914" width="9.47322" y="213.39202" x="80.16573" fill="#666666"/>
+                                </g>
+                                <!-- SENSORES DE FLUXO -->
+                                <g id="sensFluxoBomba">
+                                 <ellipse stroke="#000" stroke-width="0.5" ry="7.90243" rx="8.57097" id="svg_74" cy="280.46366" cx="279.02808" fill="#666666"/>
+                                 <rect stroke="#000" id="svg_73" height="23.09914" width="8.1199" y="269.31944" x="269.55469" fill="#666666" stroke-width="0.5"/>
+                                </g>
+                                 <g id="sensFluxoDreno">
+                                    <ellipse stroke="#000" ry="8.381" rx="9.28116" id="svg_70" cy="256.96045" cx="89.86242" fill="#666666" stroke-width="0.5"/>
+                                    <path stroke="#000" fill="#666666" opacity="undefined" d="m80.21467,245.62455l9.47317,0l0,23.09914l-9.47317,0l0,-23.09914z" id="svg_69"/>
+                                 </g>
+                                <!-- SENSORES DE NÍVEL -->
+                                <g stroke="null" id="sensor1">
+                                    <path stroke="#000000" id="svg_27" d="m91.22238,477.09766l20.71625,-0.00996l9.71912,4.86306" opacity="NaN" stroke-width="5" fill="none"/>
+                                </g>
+                                <g stroke="null" id="senso2">
+                                    <path stroke="#000000" id="svg_25" d="m93.23239,330.38265l20.71625,-0.00996l9.71912,4.86306" opacity="NaN" stroke-width="5" fill="none"/>
+                                </g>
+                                <g stroke="null" id="sensor3">
+                                    <text stroke="#000" transform="matrix(0.42686 0 0 0.424403 121.424 248.103)" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" id="svg_6" y="-221.9086" x="-269.53675" stroke-width="0" fill="#000000">Sensor de 20%</text>
+                                    <path stroke="#000000" id="svg_18" d="m102.60574,147.35231l20.71624,-0.00997l9.71912,4.86306" opacity="NaN" stroke-width="5" fill="none"/>
+                                </g>
+                                <g stroke="null" id="sensor4">
+                                    <text stroke="#000" transform="matrix(0.42686 0 0 0.424403 122.475 218.401)" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" id="svg_5" y="-221.07185" x="-271.99914" stroke-width="0" fill="#000000">Sensor de 40%</text>
+                                    <path stroke="#000000" id="svg_19" d="m103.26241,117.44844l20.71625,-0.00996l9.71912,4.86306" opacity="NaN" stroke-width="5" fill="none"/>
+                                </g>
+                                <g stroke="null" id="sensor5">
+                                    <text stroke="#000" transform="matrix(0.42686 0 0 0.424403 122.475 189.055)" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" id="svg_4" y="-227.9866" x="-271.99914" stroke-width="0" fill="#000000">Sensor de 60%</text>
+                                    <path stroke="#000000" id="svg_21" d="m103.30021,87.91506l22.33143,-0.01048l10.47689,5.11943" opacity="NaN" stroke-width="5" fill="none"/>
+                                </g>
+                                <g stroke="null" id="sensor6">
+                                    <text stroke="#000" transform="matrix(0.42686 0 0 0.424403 123.526 154.817)" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" id="svg_3" y="-218.76693" x="-274.46153" stroke-width="0" fill="#000000">Sensor de 80%</text>
+                                    <path stroke="#000000" id="svg_22" d="m101.96688,61.25192l22.33143,-0.01048l10.47689,5.11943" opacity="NaN" stroke-width="5" fill="none"/>
+                                </g>
+                                <g stroke="null" id="sensor7">
+                                    <text stroke="#000" transform="matrix(0.42686 0 0 0.424403 123.526 129.739)" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" id="svg_80" y="-224.21352" x="-276.92392" stroke-width="0" fill="#000000">Sensor de 100%</text>
+                                    <path stroke="#000000" id="svg_23" d="m101.96689,33.8419l22.33143,-0.01048l10.47689,5.11943" opacity="NaN" stroke-width="5" fill="none"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div id="divBotaoBomba" class="botoes">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <p>Bomba</p>
+                        </div>
+                        <div id="divBotaoValSub" class="botoes">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                              <p>Eletroválvula<br/> de subida<br/></p>
+                        </div>
+                        <div id="divBotaoValDes" class="botoes">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                            <p>Eletroválvula<br/> de descida<br/></p>
+                        </div>
+                    </figure>
+    </body>
+</html>

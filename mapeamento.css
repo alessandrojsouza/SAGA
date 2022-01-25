@@ -1,0 +1,158 @@
+body{
+    background-color: #41ADC1;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+*{
+    margin: 0px;
+    padding:0px;
+}
+/*
+div#container{
+    background-color:rgb(155, 236, 242);
+    margin-top: -20px;
+
+}
+div#mapeamento{
+    margin-left: 1.5px;
+    margin-top: -10px;
+}
+*/
+/*--------Leituras--------*/
+div#leituras{
+    background-color: #2d82b7;
+    border-radius: 10px 10px 10px 10px;
+    padding-top: 10px;
+    padding: 0px;
+    padding-bottom: 0px;
+}
+h1#titulo{
+    font-size: 34px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    background-color: #192A51;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+h2#textLei{
+    font-size: 28px;
+    text-align: center;
+    padding: 0px;
+    margin: 1px;
+}
+h3.dados{
+    padding: 0px;
+    text-align: center;
+    margin: 1px;
+}
+/*--------SVG-------------*/
+div#svg{
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    margin: 10px;
+}
+figure#imagem{
+    position: relative;
+}
+figure#imagem div#divBotaoBomba{
+    position: absolute;
+    top: 475px;
+    left: 300px;
+}
+figure#imagem div#divBotaoValSub{
+    position: absolute;
+    top: 230px;
+    left: 320px;
+}
+figure#imagem div#divBotaoValDes{
+    position: absolute;
+    top: 220px;
+    left: 130px;
+}
+/* ------- MENU ----------*/
+nav#menu{
+    background-color: #192A51;
+    text-align: left;
+}
+nav#menu ul{
+    list-style: none;
+	left: 490px;
+}
+nav#menu li{
+	display: inline-block;
+	padding: 5px;
+	margin: 2px;
+}
+nav#menu a {
+	color: #ffffff;
+	text-decoration: none;
+    font-size: 20px;
+}
+
+/*---------BOTÕES--------*/
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 24px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
